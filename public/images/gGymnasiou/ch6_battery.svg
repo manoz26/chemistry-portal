@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" font-family="Arial, Helvetica, sans-serif">
+  <title>Μπαταρία: τα ηλεκτρόνια κινούνται μέσω του εξωτερικού κυκλώματος από την άνοδο (−) προς την κάθοδο (+)</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d4ed8"/>
+    </marker>
+  </defs>
+  <rect width="400" height="360" fill="#ffffff"/>
+
+  <!-- external circuit -->
+  <path d="M120 304 V322 H330 V212" fill="none" stroke="#1f2937" stroke-width="3"/>
+  <path d="M330 160 V40 H120 V56" fill="none" stroke="#1f2937" stroke-width="3"/>
+
+  <!-- bulb -->
+  <g>
+    <line x1="296" y1="172" x2="284" y2="166" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="296" y1="190" x2="284" y2="196" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="364" y1="172" x2="376" y2="166" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="364" y1="190" x2="376" y2="196" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="330" cy="181" r="22" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+    <path d="M320 184 L324 175 L328 184 L332 175 L336 184 L340 175" fill="none" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="319" y="200" width="22" height="12" fill="#9ca3af" stroke="#4b5563" stroke-width="1.5"/>
+  </g>
+
+  <!-- battery -->
+  <rect x="108" y="56" width="24" height="14" fill="#374151"/>
+  <rect x="108" y="290" width="24" height="14" fill="#374151"/>
+  <rect x="60" y="70" width="120" height="80" fill="#67e8f9" stroke="#1f2937" stroke-width="2"/>
+  <rect x="60" y="150" width="120" height="70" fill="#fde047" stroke="#1f2937" stroke-width="2"/>
+  <rect x="60" y="220" width="120" height="70" fill="#fb923c" stroke="#1f2937" stroke-width="2"/>
+  <text x="120" y="116" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">κάθοδος</text>
+  <text x="120" y="190" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">ηλεκτρολύτης</text>
+  <text x="120" y="261" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">άνοδος</text>
+  <text x="88" y="64" text-anchor="middle" font-size="24" font-weight="bold" fill="#b91c1c">+</text>
+  <text x="88" y="306" text-anchor="middle" font-size="26" font-weight="bold" fill="#1d4ed8">−</text>
+
+  <!-- electrons on the wire -->
+  <g fill="#3b82f6">
+    <circle cx="170" cy="322" r="4.5"/>
+    <circle cx="290" cy="322" r="4.5"/>
+    <circle cx="330" cy="262" r="4.5"/>
+    <circle cx="330" cy="100" r="4.5"/>
+    <circle cx="250" cy="40" r="4.5"/>
+    <circle cx="170" cy="40" r="4.5"/>
+  </g>
+
+  <!-- direction of electron flow: anode → external circuit → cathode -->
+  <g stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#ah)">
+    <line x1="200" y1="338" x2="262" y2="338"/>
+    <line x1="350" y1="292" x2="350" y2="236"/>
+    <line x1="350" y1="134" x2="350" y2="78"/>
+    <line x1="290" y1="24" x2="200" y2="24"/>
+  </g>
+  <g font-size="15" font-weight="bold" fill="#1d4ed8">
+    <text x="178" y="352">e<tspan font-size="11" dy="-6">−</tspan></text>
+    <text x="358" y="268">e<tspan font-size="11" dy="-6">−</tspan></text>
+    <text x="358" y="110">e<tspan font-size="11" dy="-6">−</tspan></text>
+    <text x="300" y="29">e<tspan font-size="11" dy="-6">−</tspan></text>
+  </g>
+</svg>
